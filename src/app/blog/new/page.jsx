@@ -5,7 +5,6 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
-import blogPassword from "../../../../utils/password";
 import supabase from "../../../../utils/client";
 import { useRouter } from "next/navigation";
 import { useToast } from "@/components/ui/use-toast";
@@ -23,6 +22,8 @@ const newPost = () => {
   const [link, setLink] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState(false);
+
+  const blogPassword = process.env.NEXT_PUBLIC_PASSWORD;
 
   const router = useRouter();
 
