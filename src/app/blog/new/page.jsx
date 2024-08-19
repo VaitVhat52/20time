@@ -45,11 +45,14 @@ const newPost = () => {
       if (!error) {
         router.push("/blog");
         toast({
-          title: "Blog post was created successfully.",
+          title: "Success!",
+          description: "Blog post was created successfully.",
+          variant: "success",
         });
       } else if (error) {
         toast({
           title: "Error creating blog post.",
+          variant: "destructive",
           description: `Error ${error.code}: ${error.message}`,
         });
       }
@@ -116,7 +119,7 @@ const newPost = () => {
               id="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              placeholder="Password"
+              placeholder="Blog Password"
               className="w-full"
             />
             <p className={`text-sm text-red-700 ${error ? "block" : "hidden"}`}>
