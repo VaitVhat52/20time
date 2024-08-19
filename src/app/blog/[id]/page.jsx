@@ -36,7 +36,7 @@ const page = () => {
   }, []);
 
   return (
-    <div className="flex flex-col mx-auto">
+    <div className="flex flex-col mx-auto mb-8">
       <div className="mx-[200px]">
         <p className="text-5xl font-semibold mt-32 text-left">{title}</p>
         <p className="mt-3 mb-8">{date}</p>
