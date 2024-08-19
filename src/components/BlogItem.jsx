@@ -33,7 +33,7 @@ const BlogItem = (props) => {
       </CardContent>
       <CardFooter>
         <Link href={`blog/${props.link}`}>
-          <Button variant="outline">Read More</Button>
+          <Button variant="outline">Read More...</Button>
         </Link>
       </CardFooter>
     </Card>
