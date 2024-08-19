@@ -2,6 +2,7 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import Sidebar from "@/components/Sidebar";
 import { Analytics } from "@vercel/analytics/react";
+import { Toaster } from "@/components/ui/toaster";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -20,6 +21,7 @@ export default function RootLayout({ children }) {
         <div className="flex">
           <Sidebar />
           {children}
+          <Toaster />
           <Analytics />
         </div>
       </body>
