@@ -19,7 +19,7 @@ const BlogItem = (props) => {
   const date = month + " " + Number(day + 1) + ", " + year;
 
   return (
-    <Card className="w-[350px]">
+    <Card className="w-[350px] hover:scale-[101%] transition-all">
       <img
         src={props.img}
         alt="Card Image"
@@ -34,7 +34,7 @@ const BlogItem = (props) => {
       </CardContent>
       <CardFooter>
         <Link href={`blog/${props.link}`}>
-          <Button variant="outline">Read More...</Button>
+          <Button variant="">Read More</Button>
         </Link>
       </CardFooter>
     </Card>
