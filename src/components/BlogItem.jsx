@@ -9,16 +9,17 @@ import {
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import Markdown from "react-markdown";
 
 const BlogItem = (props) => {
   const dateInfo = new Date(`${props.date}`);
   const day = dateInfo.getDate();
   const month = dateInfo.toLocaleString("default", { month: "long" });
   const year = dateInfo.getFullYear();
-  const date = month + " " + day + ", " + year;
+  const date = month + " " + Number(day + 1) + ", " + year;
 
   return (
-    <Card className="">
+    <Card className="w-[350px]">
       <img
         src={props.img}
         alt="Card Image"
