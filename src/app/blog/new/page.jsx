@@ -9,14 +9,7 @@ import supabase from "../../../../utils/client";
 import { useRouter } from "next/navigation";
 import { useToast } from "@/components/ui/use-toast";
 import BlogItem from "@/components/BlogItem";
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-} from "@/components/ui/dialog";
+import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 
 const newPost = () => {
   const date = new Date();
@@ -130,7 +123,7 @@ const newPost = () => {
               Password is incorrect.
             </p>
           </div>
-          <Button type="submit">Button</Button>
+          <Button type="submit">Create Post</Button>
         </form>
       </div>
       <div className="w-full flex justify-center mt-3 hover:underline">
