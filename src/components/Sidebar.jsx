@@ -7,7 +7,7 @@ const Sidebar = () => {
   return (
     <div className="flex flex-col items-center justify-between min-w-[280px] h-screen text-white bg-[#404040] pt-10 px-5 pb-2 sticky top-0 z-50">
       <Link href={"/"} className="pb-5 text-4xl font-semibold">
-        ZACKY
+        NAME
       </Link>
       <Separator />
       <div className="flex flex-col justify-center h-full w-full">

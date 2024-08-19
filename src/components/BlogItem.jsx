@@ -11,6 +11,12 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
 const BlogItem = (props) => {
+  const dateInfo = new Date(`${props.date}`);
+  const day = dateInfo.getDate();
+  const month = dateInfo.toLocaleString("default", { month: "long" });
+  const year = dateInfo.getFullYear();
+  const date = month + " " + day + ", " + year;
+
   return (
     <Card className="">
       <img
@@ -20,7 +26,7 @@ const BlogItem = (props) => {
       />
       <CardHeader>
         <CardTitle>{props.title}</CardTitle>
-        <CardDescription>{props.date}</CardDescription>
+        <CardDescription>{date}</CardDescription>
       </CardHeader>
       <CardContent>
         <p className="truncate">{props.content}</p>
