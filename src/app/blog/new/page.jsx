@@ -65,7 +65,7 @@ const newPost = () => {
     <div className="w-full flex flex-col justify-center items-center">
       <div className="max-w-max min-w-[1200px]">
         <form
-          className="flex flex-col gap-5 mx-[200px]"
+          className="flex flex-col gap-5 mx-[200px] mt-5"
           onSubmit={handleSubmit}
         >
           <div className="grid w-full gap-1.5">
@@ -131,7 +131,7 @@ const newPost = () => {
       </div>
       <div className="w-full flex justify-center mt-3 hover:underline">
         <Dialog>
-          <DialogTrigger>View Card Preview</DialogTrigger>
+          <DialogTrigger className='mt-5'>View Card Preview</DialogTrigger>
           <DialogContent>
             <div className="w-full flex justify-center items-center">
               <BlogItem
