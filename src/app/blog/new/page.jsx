@@ -131,7 +131,7 @@ const newPost = () => {
       </div>
       <div className="w-full flex justify-center mt-3 hover:underline">
         <Dialog>
-          <DialogTrigger className='mt-5'>View Card Preview</DialogTrigger>
+          <DialogTrigger className='mb-5'>View Card Preview</DialogTrigger>
           <DialogContent>
             <div className="w-full flex justify-center items-center">
               <BlogItem
