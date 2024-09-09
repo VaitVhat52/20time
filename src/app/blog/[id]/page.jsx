@@ -40,7 +40,9 @@ const page = () => {
       <div className="mx-[200px]">
         <p className="text-5xl font-semibold mt-32 text-left">{title}</p>
         <p className="mt-3 mb-8">{date}</p>
-        <Markdown className="prose min-w-fit max-w-max">{body}</Markdown>
+        <Markdown className="prose min-w-fit max-w-max indent-8">
+          {body}
+        </Markdown>
       </div>
     </div>
   );
