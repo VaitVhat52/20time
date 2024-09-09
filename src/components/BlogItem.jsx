@@ -9,7 +9,7 @@ import {
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import Markdown from "react-markdown";
+import Image from "next/image";
 
 const BlogItem = (props) => {
   const dateInfo = new Date(`${props.date}`);
@@ -19,25 +19,28 @@ const BlogItem = (props) => {
   const date = month + " " + Number(day + 1) + ", " + year;
 
   return (
-    <Card className="w-[350px] hover:scale-[101%] transition-all">
-      <img
-        src={props.img}
-        alt="Card Image"
-        className="rounded-t-lg w-[350px] h-[200px] object-cover"
-      />
-      <CardHeader>
-        <CardTitle>{props.title}</CardTitle>
-        <CardDescription>{date}</CardDescription>
-      </CardHeader>
-      <CardContent>
-        <p className="truncate">{props.content}</p>
-      </CardContent>
-      <CardFooter>
-        <Link href={`blog/${props.link}`}>
-          <Button variant="">Read More</Button>
-        </Link>
-      </CardFooter>
-    </Card>
+    <Link href={`blog/${props.link}`}>
+      <Card className="w-[350px] hover:scale-[101%] transition-all">
+        <Image
+          src={props.img}
+          width={350}
+          height={200}
+          className="rounded-t-lg w-[350px] h-[200px] object-cover"
+        />
+        <CardHeader>
+          <CardTitle>{props.title}</CardTitle>
+          <CardDescription>{date}</CardDescription>
+        </CardHeader>
+        <CardContent>
+          <p className="truncate">{props.content}</p>
+        </CardContent>
+        <CardFooter>
+          <Link href={`blog/${props.link}`}>
+            <Button variant="">Read More</Button>
+          </Link>
+        </CardFooter>
+      </Card>
+    </Link>
   );
 };
 

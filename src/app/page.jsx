@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Home() {
   return (
     <div className="w-full flex flex-col">
@@ -8,7 +10,12 @@ export default function Home() {
         <p className="text-white text-3xl">Your Personal Desktop Assistant</p>
       </div>
       <div className="h-full flex justify-center items-center px-32 gap-24">
-        <img src="/bio.jpg" alt="Bio Image" className="w-[300px] rounded-lg" />
+        <Image
+          src={"/bio.jpg"}
+          width={300}
+          height={300}
+          className="rounded-lg"
+        />
         <div className="flex flex-col gap-3">
           <h2 className="text-center text-2xl font-medium">
             Hi, I'm Hamza! 👋
