@@ -18,7 +18,7 @@ const BlogCards = () => {
 
   return (
     <div className="grid grid-cols-3 gap-7">
-      {blogData.map((blogData) => (
+      {blogData?.map((blogData) => (
         <BlogItem
           key={blogData.id}
           img={blogData.image_link}
