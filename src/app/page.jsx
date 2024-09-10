@@ -20,7 +20,7 @@ export default function Home() {
           <h2 className="text-center text-2xl font-medium">
             Hi, I'm Hamza! 👋
           </h2>
-          <p className="leading-loose">
+          <p className="leading-loose indent-8">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus
             repellat veritatis quaerat placeat excepturi nostrum eaque?
             Asperiores labore consequuntur hic rem, vero voluptate, cupiditate
