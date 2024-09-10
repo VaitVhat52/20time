@@ -29,10 +29,12 @@ const BlogCards = () => {
         />
       ))} */}
       <BlogItem
-        img={"/herobg.jpg"}
+        img={"https://i.postimg.cc/LXp5snDF/IMG-0251.jpg"}
         title={"Welcome!"}
         date={"September 10, 2024"}
-        content={"Creating Zacky can be broken down into a few main steps:"}
+        content={
+          "Welcome to Zacky! For my 20 time project, I will be creating an AI desktop assistant from scratch."
+        }
         link={"welcome"}
       />
     </div>
