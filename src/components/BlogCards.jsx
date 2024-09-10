@@ -18,7 +18,7 @@ const BlogCards = () => {
 
   return (
     <div className="grid grid-cols-3 gap-7">
-      {blogData?.map((blogData) => (
+      {/* {blogData?.map((blogData) => (
         <BlogItem
           key={blogData.id}
           img={blogData.image_link}
@@ -27,7 +27,14 @@ const BlogCards = () => {
           content={blogData.content}
           link={blogData.link}
         />
-      ))}
+      ))} */}
+      <BlogItem
+        img={"/herobg.jpg"}
+        title={"Welcome!"}
+        date={"September 10, 2024"}
+        content={"Creating Zacky can be broken down into a few main steps:"}
+        link={"welcome"}
+      />
     </div>
   );
 };

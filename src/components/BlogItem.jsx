@@ -19,28 +19,26 @@ const BlogItem = (props) => {
   const date = month + " " + Number(day + 1) + ", " + year;
 
   return (
-    <Link href={`blog/${props.link}`}>
-      <Card className="w-[350px] hover:scale-[101%] transition-all">
-        <Image
-          src={props.img}
-          width={350}
-          height={200}
-          className="rounded-t-lg w-[350px] h-[200px] object-cover"
-        />
-        <CardHeader>
-          <CardTitle>{props.title}</CardTitle>
-          <CardDescription>{date}</CardDescription>
-        </CardHeader>
-        <CardContent>
-          <p className="truncate">{props.content}</p>
-        </CardContent>
-        <CardFooter>
-          <Link href={`blog/${props.link}`}>
-            <Button variant="">Read More</Button>
-          </Link>
-        </CardFooter>
-      </Card>
-    </Link>
+    <Card className="w-[350px] hover:scale-[101%] transition-all">
+      <Image
+        src={props.img}
+        width={350}
+        height={200}
+        className="rounded-t-lg w-[350px] h-[200px] object-cover"
+      />
+      <CardHeader>
+        <CardTitle>{props.title}</CardTitle>
+        <CardDescription>{props.date}</CardDescription>
+      </CardHeader>
+      <CardContent>
+        <p className="truncate">{props.content}</p>
+      </CardContent>
+      <CardFooter>
+        <Link href={`blog/${props.link}`}>
+          <Button variant="">Read More</Button>
+        </Link>
+      </CardFooter>
+    </Card>
   );
 };
 
