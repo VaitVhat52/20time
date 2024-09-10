@@ -39,7 +39,7 @@ const page = () => {
 
   const body = `
 
-Welcome to Zacky! For my 20 time project, I will be creating an AI desktop assistant from scratch.
+Welcome to the Zacky blog! For my 20 time project, I will be creating an AI desktop assistant from scratch.
 
 ## Creating Zacky can be broken down into a few main steps:
 
