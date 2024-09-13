@@ -75,7 +75,7 @@ This week, I started refreshing myself on the Python programming language using 
   <figure>
     <!-- IMAGE DIMENSIONS: 687px x 515px -->
     <img src="https://i.postimg.cc/y8RSY4K9/Screenshot-2024-09-10-191804.png" alt="my alt text"/>
-    <figcaption>A simple python program</figcaption>
+    <figcaption>A simple Python program</figcaption>
   </figure>
 </center>
 
