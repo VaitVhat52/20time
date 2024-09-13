@@ -26,7 +26,7 @@ const Sidebar = () => {
 
   return (
     <>
-      <div className="md:hidden flex justify-between items-center bg-[#404040] text-white py-2 px-5 sticky top-0">
+      <div className="md:hidden flex justify-between items-center bg-[#404040] text-white py-2 px-5">
         <div>
           <Link href={"/"} className="text-2xl">
             Zacky

@@ -18,12 +18,8 @@ export default function Home() {
           height={300}
           className="rounded-lg mt-10 md:mx-auto hidden md:block"
         />
-        <img
-          src={"/bio.jpg"}
-          className="rounded-lg mt-10 md:mx-auto block md:hidden object-scale-down"
-        />
         <div className="flex flex-col gap-3 md:mx-0 -mx-20">
-          <h2 className="text-center text-2xl font-medium">
+          <h2 className="text-center text-2xl font-medium mt-10">
             Hi, I'm Hamza! 👋
           </h2>
           <p className="leading-loose indent-8 md:mb-0 mb-8">
@@ -37,6 +33,14 @@ export default function Home() {
             obcaecati?
           </p>
         </div>
+      </div>
+      <div className="mx-auto mb-10 -mt-5">
+        <Image
+          src={"/bio.jpg"}
+          width={300}
+          height={300}
+          className="rounded-lg mt-10 md:mx-auto block md:hidden"
+        />
       </div>
     </div>
   );
