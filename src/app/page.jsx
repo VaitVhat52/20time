@@ -18,11 +18,9 @@ export default function Home() {
           height={300}
           className="rounded-lg mt-10 md:mx-auto hidden md:block"
         />
-        <Image
+        <img
           src={"/bio.jpg"}
-          width={500}
-          height={300}
-          className="rounded-lg mt-10 md:mx-auto block md:hidden"
+          className="rounded-lg mt-10 md:mx-auto block md:hidden aspect-auto"
         />
         <div className="flex flex-col gap-3 md:mx-0 -mx-20">
           <h2 className="text-center text-2xl font-medium">
