@@ -36,14 +36,17 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <div className="mx-auto mb-10 -mt-5">
+      <figure className="mx-auto mb-10 -mt-5">
         <Image
           src={"/bio.jpg"}
           width={300}
           height={300}
           className="rounded-lg mt-10 md:mx-auto block md:hidden"
         />
-      </div>
+        <figcaption className="text-center text-sm pt-2 text-gray-400 block md:hidden">
+          Me with Napoleon the duck
+        </figcaption>
+      </figure>
     </div>
   );
 }
