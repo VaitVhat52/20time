@@ -23,7 +23,7 @@ export default function Home() {
             Hi, I'm Hamza! 👋
           </h2>
           <p className="leading-loose indent-8 md:mb-0 mb-8">
-            For my senior 20 time project, I will be creating an AI powered
+            For my senior 20 time project, I will be creating an AI-powered
             desktop assistant named Zacky. From a young age, I've always been
             interested in design and how things work. I started by teaching
             myself how to code websites (like this one) and progressed on to
