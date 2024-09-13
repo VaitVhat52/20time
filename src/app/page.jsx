@@ -11,7 +11,7 @@ export default function Home() {
           Your Personal Desktop Assistant
         </p>
       </div>
-      <div className="flex-col md:flex-row h-full flex justify-center items-center px-32 md:gap-24 gap-10">
+      <div className="flex-col md:flex-row h-full flex justify-center items-center px-32 md:gap-24 gap-10  -mx-20">
         <Image
           src={"/bio.jpg"}
           width={300}
@@ -20,9 +20,9 @@ export default function Home() {
         />
         <img
           src={"/bio.jpg"}
-          className="rounded-lg mt-10 md:mx-auto block md:hidden aspect-auto"
+          className="rounded-lg mt-10 md:mx-auto block md:hidden aspect-auto w-[70%]"
         />
-        <div className="flex flex-col gap-3 md:mx-0 -mx-20">
+        <div className="flex flex-col gap-3 md:mx-0">
           <h2 className="text-center text-2xl font-medium">
             Hi, I'm Hamza! 👋
           </h2>
