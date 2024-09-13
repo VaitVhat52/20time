@@ -91,8 +91,8 @@ The goal for next week is to start using the ChatGPT API to start coding the AI 
 
   return (
     <div className="flex flex-col mx-auto mb-14">
-      <div className="mx-[200px]">
-        <p className="text-5xl font-semibold mt-20 text-left">Welcome!</p>
+      <div className="mx-8 md:mx-[200px]">
+        <p className="text-5xl font-semibold mt-10 md:mt-20 text-left">Welcome!</p>
         <p className="mt-3 mb-8">September 10, 2024</p>
         <Markdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeRaw]} className="prose min-w-fit max-w-max">{body}</Markdown>
       </div>

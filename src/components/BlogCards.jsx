@@ -17,7 +17,7 @@ const BlogCards = () => {
   }, []);
 
   return (
-    <div className="grid grid-cols-3 gap-7">
+    <div className="flex flex-wrap justify-center items-center md:grid grid-cols-3 gap-7">
       {/* {blogData?.map((blogData) => (
         <BlogItem
           key={blogData.id}
