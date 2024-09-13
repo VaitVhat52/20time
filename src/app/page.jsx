@@ -3,11 +3,11 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className="w-full flex flex-col">
-      <div className="bg-cover bg-no-repeat md:min-h-[300px] py-10 bg-[url('/herobg.jpg')] bg-center flex flex-col justify-center items-center gap-3">
-        <h1 className="md:text-[5rem] text-5xl font-medium text-white">
+      <div className="bg-cover bg-no-repeat md:min-h-[300px] py-7 bg-[url('/herobg.jpg')] bg-center flex flex-col justify-center items-center md:gap-10 gap-3">
+        <h1 className="md:text-[5rem] text-4xl font-medium text-white">
           Say hello to Zacky,
         </h1>
-        <p className="text-white md:text-3xl text-xl">
+        <p className="text-white md:text-3xl text-md">
           Your Personal Desktop Assistant
         </p>
       </div>
@@ -16,7 +16,13 @@ export default function Home() {
           src={"/bio.jpg"}
           width={300}
           height={300}
-          className="rounded-lg mt-10 md:mx-auto"
+          className="rounded-lg mt-10 md:mx-auto hidden md:block"
+        />
+        <Image
+          src={"/bio.jpg"}
+          width={500}
+          height={300}
+          className="rounded-lg mt-10 md:mx-auto block md:hidden"
         />
         <div className="flex flex-col gap-3 md:mx-0 -mx-20">
           <h2 className="text-center text-2xl font-medium">

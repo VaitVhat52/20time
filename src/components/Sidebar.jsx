@@ -36,6 +36,7 @@ const Sidebar = () => {
           <RxHamburgerMenu size={25} onClick={sidebarChange} />
         </div>
       </div>
+
       <div
         className={`${
           sidebar ? "hidden" : ""
