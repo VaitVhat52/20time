@@ -18,7 +18,7 @@ const research = () => {
         </TabsList>
         <TabsContent value="1">
           <Markdown className="font-serif text-center text-4xl">
-            Research Paper 1 Coming Soon!
+            What is an Arduino and how does it work?
           </Markdown>
         </TabsContent>
         <TabsContent value="2">
