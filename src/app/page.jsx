@@ -23,25 +23,30 @@ export default function Home() {
             Hi, I'm Hamza! 👋
           </h2>
           <p className="leading-loose indent-8 md:mb-0 mb-8">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus
-            repellat veritatis quaerat placeat excepturi nostrum eaque?
-            Asperiores labore consequuntur hic rem, vero voluptate, cupiditate
-            laborum odio at, deserunt eveniet iste! Lorem, ipsum dolor sit amet
-            consectetur adipisicing elit. Maxime dolorum vel ea? Perspiciatis,
-            architecto magni hic id autem corrupti assumenda. Fuga dolore
-            delectus dolor adipisci quaerat deleniti laudantium assumenda
-            obcaecati?
+            For my senior 20 time project, I will be creating an AI-powered
+            desktop assistant named Zacky. From a young age, I've always been
+            interested in design and how things work. I started by teaching
+            myself how to code websites (like this one) and progressed on to
+            physical design. After purchasing a 3D printer, I taught myself 3D
+            design and have been creating projects with it ever since. Now, I've
+            started diving into the world of electronics, and that is what
+            prompted me to start this project. Through this, I will be able to
+            grasp the basics of electrical design and hopefully be able to apply
+            it to future projects.
           </p>
         </div>
       </div>
-      <div className="mx-auto mb-10 -mt-5">
+      <figure className="mx-auto mb-10 -mt-5">
         <Image
           src={"/bio.jpg"}
           width={300}
           height={300}
           className="rounded-lg mt-10 md:mx-auto block md:hidden"
         />
-      </div>
+        <figcaption className="text-center text-sm pt-2 text-gray-400 block md:hidden">
+          Me with Napoleon the duck
+        </figcaption>
+      </figure>
     </div>
   );
 }
