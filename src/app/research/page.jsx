@@ -4,6 +4,16 @@ import { Separator } from "@/components/ui/separator";
 import Markdown from "react-markdown";
 
 const research = () => {
+  const research1 = `
+  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio voluptates minus provident consectetur voluptatem, explicabo harum beatae, aliquid fuga amet natus quos ipsam eveniet illum. Quis similique provident esse nobis?
+  
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, fuga odio reprehenderit unde animi modi ullam fugiat. Itaque, minus fugit labore adipisci nulla, autem earum, perspiciatis ea et dolorem veniam!
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam reprehenderit amet harum similique dolorum ipsum unde excepturi porro ea quod natus accusamus ipsa libero, aliquam ipsam dolorem repellendus incidunt quis?
+
+  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat, enim voluptatum blanditiis natus modi officiis magnam. Beatae, fuga, quibusdam autem non ex dolorem tempora iste ad facere, ea incidunt deleniti.
+
+  `;
+
   return (
     <div className="flex mx-auto mt-20 mb-8">
       <Tabs defaultValue="1">
@@ -17,22 +27,23 @@ const research = () => {
           <TabsTrigger value="4">Research Paper 4</TabsTrigger>
         </TabsList>
         <TabsContent value="1">
-          <Markdown className="font-serif text-center text-4xl">
+          <h2 className="font-serif text-4xl pb-8">
             What is an Arduino and how does it work?
-          </Markdown>
+          </h2>
+          <Markdown className="font-serif prose indent-8">{research1}</Markdown>
         </TabsContent>
         <TabsContent value="2">
-          <Markdown className="font-serif text-center text-4xl">
+          <Markdown className="font-serif prose">
             Research Paper 2 Coming Soon!
           </Markdown>
         </TabsContent>
         <TabsContent value="3">
-          <Markdown className="font-serif text-center text-4xl">
+          <Markdown className="font-serif prose">
             Research Paper 3 Coming Soon!
           </Markdown>
         </TabsContent>
         <TabsContent value="4">
-          <Markdown className="font-serif text-center text-4xl">
+          <Markdown className="font-serif prose">
             Research Paper 4 Coming Soon!
           </Markdown>
         </TabsContent>
