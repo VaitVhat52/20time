@@ -5,16 +5,16 @@ import BlogItem from "./BlogItem";
 import supabase from "../../utils/client";
 
 const BlogCards = () => {
-  const [blogData, setBlogData] = useState([]);
+  // const [blogData, setBlogData] = useState([]);
 
-  async function fetchBlogData() {
-    const { data, error } = await supabase.from("blog").select();
-    setBlogData(data);
-  }
+  // async function fetchBlogData() {
+  //   const { data, error } = await supabase.from("blog").select();
+  //   setBlogData(data);
+  // }
 
-  useEffect(() => {
-    fetchBlogData();
-  }, []);
+  // useEffect(() => {
+  //   fetchBlogData();
+  // }, []);
 
   return (
     <div className="flex flex-wrap justify-center items-center gap-5">
