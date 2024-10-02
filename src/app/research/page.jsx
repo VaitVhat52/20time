@@ -28,7 +28,7 @@ const research = () => {
   `;
 
   return (
-    <div className="flex mx-auto mt-20 mb-8">
+    <div className="flex mx-auto mt-10 md:mt-20 mb-8">
       <Tabs className="hidden md:block" defaultValue="1">
         <TabsList className="gap-5 mb-8">
           <TabsTrigger value="1">Research Paper 1</TabsTrigger>
@@ -83,7 +83,7 @@ const research = () => {
           <TabsTrigger value="4">4</TabsTrigger>
         </TabsList>
         <TabsContent value="1">
-          <h2 className="font-serif text-2xl pb-8 text-center">
+          <h2 className="font-serif text-2xl pb-8 text-center text-pretty">
             What is an Arduino and how does it work?
           </h2>
           <Markdown className="font-serif prose indent-8 mx-auto">
@@ -91,7 +91,7 @@ const research = () => {
           </Markdown>
         </TabsContent>
         <TabsContent value="2">
-          <h2 className="font-serif text-2xl pb-8 text-center">
+          <h2 className="font-serif text-2xl pb-8 text-center text-pretty">
             Research Paper 2 Coming Soon!
           </h2>
           <Markdown className="font-serif prose indent-8 mx-auto">
@@ -99,7 +99,7 @@ const research = () => {
           </Markdown>
         </TabsContent>
         <TabsContent value="3">
-          <h2 className="font-serif text-2xl pb-8 text-center">
+          <h2 className="font-serif text-2xl pb-8 text-center text-pretty">
             Research Paper 3 Coming Soon!
           </h2>
           <Markdown className="font-serif prose indent-8 mx-auto">
@@ -107,7 +107,7 @@ const research = () => {
           </Markdown>
         </TabsContent>
         <TabsContent value="4">
-          <h2 className="font-serif text-2xl pb-8 text-center">
+          <h2 className="font-serif text-2xl pb-8 text-center text-pretty">
             Research Paper 4 Coming Soon!
           </h2>
           <Markdown className="font-serif prose indent-8 mx-auto">
