@@ -70,7 +70,7 @@ const research = () => {
         </TabsContent>
         <TabsContent value="2">
           <h2 className="font-serif text-4xl pb-8 text-center">
-            Research Paper 2 Coming Soon!
+            What is a Raspberry Pi and how does it work?
           </h2>
           <Markdown className="font-serif prose indent-8 mx-auto">
             {research2}
