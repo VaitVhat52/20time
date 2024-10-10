@@ -2,18 +2,35 @@ import React from "react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Separator } from "@/components/ui/separator";
 import Markdown from "react-markdown";
+import remarkGfm from "remark-gfm";
+import rehypeRaw from "rehype-raw";
 
 const research = () => {
   const research1 = `
-  Research 1
 
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam dolor, temporibus animi pariatur necessitatibus repellat porro iure suscipit, facilis debitis dolorem commodi inventore rerum quod praesentium laborum repellendus excepturi explicabo!
+ Arduino is an open-source electronics platform focused on hardware, designed to make it easy for anyone to create interactive projects. It was created at the Ivrea Interaction Design Institute as a way for anyone, regardless of their background, to get introduced to the world of electronics. Since it is open source, many variations exist. At its core, however, it typically features a microcontroller, which is a programmable chip that can be instructed to perform a variety of tasks. Common models include the Arduino Uno, Mega, and Nano, each offering different sizes, processing power, and input/output capabilities.
 
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio qui quisquam, repudiandae officia itaque perferendis, commodi illum a nam consequatur distinctio soluta, excepturi vero eveniet dolorem tempora blanditiis laborum minima. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam, pariatur eius? Cumque, officia aperiam incidunt velit blanditiis vitae exercitationem similique quisquam. Exercitationem in et laborum perferendis ad eos rerum aliquam.
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ut architecto consequuntur. Exercitationem, deleniti. Cupiditate aliquam minus voluptates, illum aperiam a, fugiat facere quidem quaerat adipisci aspernatur dolorem, quia autem? 
-  
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente expedita eaque accusantium quibusdam eius molestiae non repellendus error repellat totam quas, cum reprehenderit, laudantium molestias porro aliquid soluta perferendis dicta.
-  `;
+<center>
+  <figure>
+    <!-- IMAGE DIMENSIONS: 687px x 515px -->
+    <img src="https://i.postimg.cc/qMYfTMfc/image.png" style="height:350px;" alt="my alt text"/>
+  </figure>
+</center>
+
+ Using the Arduino is incredibly straightforward, thanks to the easy-to-use development environment. There is an almost infinite amount of resources online which teach users about the Arduino and how to implement different components such as LEDs, buttons, switches, etc . The software used to program the Arduino uses a simplified version of the C/C++ programming language. Once the user uploads the code via USB, the microcontroller runs the code in a loop, continuously checking for inputs and executing commands based on those inputs. The software is also cross-platform, allowing anyone to use it regardless of what operating system they have.
+
+<center>
+  <figure>
+    <!-- IMAGE DIMENSIONS: 687px x 515px -->
+    <img src="https://i.postimg.cc/cJSbxvF3/image.png" alt="my alt text"/>
+    <figcaption>The Arduino IDE</figcaption>
+  </figure>
+</center>
+
+ Moreover, the Arduino community has created a vast ecosystem of libraries and resources, making it easy for both beginners and advanced developers to share ideas and projects. The abundance of tutorials, forums, and open-source projects fosters an environment filled with collaboration and innovation. This accelerates learning and innovation, allowing users to experiment with new ideas and applications.
+ 
+ In summary, Arduino is more than just a tool; it's a way for people to understand electronics and programming. Its combination of accessible hardware and software empowers people to bring their ideas to life, making it an important resource in the world of DIY electronics and education.
+ `;
 
   const research2 = `
   Research 2
@@ -43,7 +60,11 @@ const research = () => {
           <h2 className="font-serif text-4xl pb-8 text-center">
             What is an Arduino and how does it work?
           </h2>
-          <Markdown className="font-serif prose indent-8 mx-auto">
+          <Markdown
+            className="font-serif prose indent-8 mx-auto"
+            remarkPlugins={[remarkGfm]}
+            rehypePlugins={[rehypeRaw]}
+          >
             {research1}
           </Markdown>
         </TabsContent>
@@ -86,7 +107,11 @@ const research = () => {
           <h2 className="font-serif text-2xl pb-8 text-center text-pretty">
             What is an Arduino and how does it work?
           </h2>
-          <Markdown className="font-serif prose indent-8 mx-auto">
+          <Markdown
+            className="font-serif prose indent-8 mx-auto"
+            remarkPlugins={[remarkGfm]}
+            rehypePlugins={[rehypeRaw]}
+          >
             {research1}
           </Markdown>
         </TabsContent>
