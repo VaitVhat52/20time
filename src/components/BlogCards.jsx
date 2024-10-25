@@ -37,6 +37,15 @@ const BlogCards = () => {
         }
         link={"welcome"}
       />
+      <BlogItem
+        img={"https://i.postimg.cc/B6DLsvMS/Screenshot-2024-10-25-185119.png"}
+        title={"Voice Assistant"}
+        date={"October 10, 2024"}
+        content={
+          "Welcome to Zacky! For my 20 time project, I will be creating an AI desktop assistant from scratch."
+        }
+        link={"voice"}
+      />
     </div>
   );
 };
