@@ -42,7 +42,7 @@ const BlogCards = () => {
         title={"Voice Assistant"}
         date={"October 10, 2024"}
         content={
-          "Welcome to Zacky! For my 20 time project, I will be creating an AI desktop assistant from scratch."
+          "This week, I completed the code that will be used to run the assistant. The code consists of a few parts that work together to make a complete voice assistant."
         }
         link={"voice"}
       />
