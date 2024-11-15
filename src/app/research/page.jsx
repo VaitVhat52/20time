@@ -78,7 +78,7 @@ const research = () => {
         </TabsContent>
         <TabsContent value="3">
           <h2 className="font-serif text-4xl pb-8 text-center">
-            Research Paper 3 Coming Soon!
+            How does a 3D printer work?
           </h2>
           <Markdown className="font-serif prose indent-8 mx-auto">
             {research3}
@@ -86,7 +86,7 @@ const research = () => {
         </TabsContent>
         <TabsContent value="4">
           <h2 className="font-serif text-4xl pb-8 text-center">
-            Research Paper 4 Coming Soon!
+            How does ChatGPT answer a question?
           </h2>
           <Markdown className="font-serif prose indent-8 mx-auto">
             {research4}
