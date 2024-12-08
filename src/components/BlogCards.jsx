@@ -46,6 +46,15 @@ const BlogCards = () => {
         }
         link={"voice"}
       />
+      <BlogItem
+        img={"https://i.postimg.cc/Y0ZF3sW-n/image.png"}
+        title={"Board Connector"}
+        date={"October 20, 2024"}
+        content={
+          "This week, using Fusion360, I designed and printed a part that would allow me to essentially combine both the Arduino and Raspberry Pi into a single board. This is necessary for the final build since it would help me save space and keep everything together."
+        }
+        link={"connector"}
+      />
     </div>
   );
 };
