@@ -54,13 +54,45 @@ With its affordability and adaptability, the Raspberry Pi has become a way for b
   `;
 
   const research3 = `
-  Research 3
+A 3D printer is able to create physical objects by building them layer by layer in a process known as additive manufacturing. It begins with a 3D design, usually created using a computer-aided design (CAD) software. This design is saved as a file, typically in formats like STL or OBJ, which define how the object looks in a 3D dimensional space. To prepare for printing, the file is then processed using slicing software, which divides the design into horizontal layers and generates a set of instructions, called “gcode”, that guide the printer's movements during the print.
+
+During the printing process, the type of 3D printing technology determines how the object is created. One of the most common methods is Fused Deposition Modeling (FDM), where a filament made of plastic is heated and pushed through a small nozzle. The nozzle moves precisely, placing material layer by layer to build the object. In another method, Stereolithography (SLA), liquid resin is hardened by an ultraviolet light to form layers. Selective Laser Sintering (SLS) uses a laser to fuse powdered material, creating objects that have greater strength, as they can be created out of metal infused powders. Once the object is printed, it may require post-processing steps such as removing support structures, curing to enhance durability, or other finishing steps like sanding or painting. This makes the final product ready for its intended use.
+
+<center>
+  <figure>
+    <!-- IMAGE DIMENSIONS: 687px x 515px -->
+    <img src="https://i.postimg.cc/rwyRY3Tn/original-prusa-mk4-3d-printer-image8-800x600.jpg" alt="my alt text"/>
+    <figcaption>An FDM 3D Printer</figcaption>
+  </figure>
+</center>
+
+3D printing has revolutionized the world by enabling the rapid and cost-effective production of prototypes, tools, and products. It can be used in many fields such as healthcare to produce medical implants, in architecture for creating models, and in manufacturing for custom prototypes. The ability to turn digital designs into tangible objects with high precision has allowed for innovation, making 3D printing an important aspect of modern engineering and design.
   `;
 
   const research4 = `
-  Research 4
+ChatGPT answers questions by using machine learning and a great amount of training data. It is based on a type of architecture called a transformer, specifically the Generative Pre-trained Transformer (GPT), which is designed to generate human-like text in response to input.
+
+The process begins with the input, where a user types a question or prompt. This text is tokenized, meaning it is broken down into smaller units such as words or even subwords. Each token is assigned a number to represent it that allows the model to process the input mathematically. Using its pre-trained parameters, ChatGPT analyzes the context of the input, identifying relationships between words and phrases to understand what the user is trying to tell it.
+
+<center>
+  <figure>
+    <!-- IMAGE DIMENSIONS: 687px x 515px -->
+    <img src="https://i.postimg.cc/MZycZqK3/1-y-M5gg3c-PHDvo7-AAq-DZry-ZA.png" alt="my alt text"/>
+  </figure>
+</center>
+
+The model’s training is incredibly important in its ability to answer questions. It has been exposed to vast amounts of text data from books, articles, websites, and more, enabling it to learn human language patterns, grammar, and factual information. This training allows ChatGPT to predict the next most likely token (word) in a sequence, enabling it to generate coherent and contextually relevant responses.
+
+When generating an answer, ChatGPT evaluates the input using the many layers of its neural network, each layer refining its understanding of the context. It looks not only at the immediate question but also any prior conversation history to maintain relevance throughout the conversation with the user. The model uses probability-based decision-making to construct a response, while striving for clarity and accuracy.
+
+Despite its capabilities, ChatGPT still has its limitations. It lacks true understanding or consciousness and can sometimes produce incorrect or nonsensical answers if the input is ambiguous or outside the scope of the training information. However, its design allows it to mimic human-like conversation effectively, providing users with informative and contextually appropriate responses to their questions.
   `;
 
+  const worksCited = `
+  <center>
+    <a href='https://docs.google.com/document/d/17Wp3Ou0N0dOWaiwkErVvvlHe8fhpP3luOBLna3E77wA/edit?usp=sharing'> Click here to view the works cited page. </a>
+  </center>
+  `;
   return (
     <div className="flex mx-auto mt-10 md:mt-20 mb-8">
       <Tabs className="hidden md:block" defaultValue="1">
@@ -72,6 +104,8 @@ With its affordability and adaptability, the Raspberry Pi has become a way for b
           <TabsTrigger value="3">Research Paper 3</TabsTrigger>
           <Separator orientation="vertical" />
           <TabsTrigger value="4">Research Paper 4</TabsTrigger>
+          <Separator orientation="vertical" />
+          <TabsTrigger value="5">Works Cited</TabsTrigger>
         </TabsList>
         <TabsContent value="1">
           <h2 className="font-serif text-4xl pb-8 text-center">
@@ -101,7 +135,11 @@ With its affordability and adaptability, the Raspberry Pi has become a way for b
           <h2 className="font-serif text-4xl pb-8 text-center">
             How does a 3D printer work?
           </h2>
-          <Markdown className="font-serif prose indent-8 mx-auto">
+          <Markdown
+            className="font-serif prose indent-8 mx-auto"
+            remarkPlugins={[remarkGfm]}
+            rehypePlugins={[rehypeRaw]}
+          >
             {research3}
           </Markdown>
         </TabsContent>
@@ -109,8 +147,22 @@ With its affordability and adaptability, the Raspberry Pi has become a way for b
           <h2 className="font-serif text-4xl pb-8 text-center">
             How does ChatGPT answer a question?
           </h2>
-          <Markdown className="font-serif prose indent-8 mx-auto">
+          <Markdown
+            className="font-serif prose indent-8 mx-auto"
+            remarkPlugins={[remarkGfm]}
+            rehypePlugins={[rehypeRaw]}
+          >
             {research4}
+          </Markdown>
+        </TabsContent>
+        <TabsContent value="5">
+          <h2 className="font-serif text-4xl pb-8 text-center">Works Cited</h2>
+          <Markdown
+            className="font-serif prose indent-8 mx-auto"
+            remarkPlugins={[remarkGfm]}
+            rehypePlugins={[rehypeRaw]}
+          >
+            {worksCited}
           </Markdown>
         </TabsContent>
       </Tabs>
@@ -123,6 +175,8 @@ With its affordability and adaptability, the Raspberry Pi has become a way for b
           <TabsTrigger value="3">3</TabsTrigger>
           <Separator orientation="vertical" />
           <TabsTrigger value="4">4</TabsTrigger>
+          <Separator orientation="vertical" />
+          <TabsTrigger value="5">WC</TabsTrigger>
         </TabsList>
         <TabsContent value="1">
           <h2 className="font-serif text-2xl pb-8 text-center text-pretty">
@@ -138,26 +192,50 @@ With its affordability and adaptability, the Raspberry Pi has become a way for b
         </TabsContent>
         <TabsContent value="2">
           <h2 className="font-serif text-2xl pb-8 text-center text-pretty">
-            Research Paper 2 Coming Soon!
+            What is a Raspberry Pi and how does it work?
           </h2>
-          <Markdown className="font-serif prose indent-8 mx-auto">
+          <Markdown
+            className="font-serif prose indent-8 mx-auto"
+            remarkPlugins={[remarkGfm]}
+            rehypePlugins={[rehypeRaw]}
+          >
             {research2}
           </Markdown>
         </TabsContent>
         <TabsContent value="3">
           <h2 className="font-serif text-2xl pb-8 text-center text-pretty">
-            Research Paper 3 Coming Soon!
+            How does a 3D printer work?
           </h2>
-          <Markdown className="font-serif prose indent-8 mx-auto">
+          <Markdown
+            className="font-serif prose indent-8 mx-auto"
+            remarkPlugins={[remarkGfm]}
+            rehypePlugins={[rehypeRaw]}
+          >
             {research3}
           </Markdown>
         </TabsContent>
         <TabsContent value="4">
           <h2 className="font-serif text-2xl pb-8 text-center text-pretty">
-            Research Paper 4 Coming Soon!
+            How does ChatGPT answer a question?
           </h2>
-          <Markdown className="font-serif prose indent-8 mx-auto">
+          <Markdown
+            className="font-serif prose indent-8 mx-auto"
+            remarkPlugins={[remarkGfm]}
+            rehypePlugins={[rehypeRaw]}
+          >
             {research4}
+          </Markdown>
+        </TabsContent>
+        <TabsContent value="5">
+          <h2 className="font-serif text-2xl pb-8 text-center text-pretty">
+            Works Cited
+          </h2>
+          <Markdown
+            className="font-serif prose indent-8 mx-auto"
+            remarkPlugins={[remarkGfm]}
+            rehypePlugins={[rehypeRaw]}
+          >
+            {worksCited}
           </Markdown>
         </TabsContent>
       </Tabs>
