@@ -77,9 +77,7 @@ Now, for the exciting part! I loaded the completed 3D model into a slicing softw
 
 <center>
   <figure>
-    <iframe width="420" height="315"
-      src="https://www.youtube.com/watch?v=c--dYCIlNTo">
-    </iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/c--dYCIlNTo?si=NGyaT4KKLbDFehzp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   </figure>
 </center>
 
@@ -87,9 +85,7 @@ Here’s a video demonstrating how all the parts fit together:
 
 <center>
   <figure>
-    <iframe width="420" height="315"
-      src="https://www.youtube.com/watch?v=u3qTrCgSWmA">
-    </iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/u3qTrCgSWmA?si=tGCII4UhucNUO9Ob" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   </figure>
 </center>
 
