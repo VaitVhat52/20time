@@ -33,7 +33,24 @@ const research = () => {
  `;
 
   const research2 = `
-  Research 2
+The Raspberry Pi is a compact and low-cost computer developed by the Raspberry Pi Foundation. It was originally designed to promote computer science education, and it has evolved into a versatile platform used in a wide range of applications, from basic programming projects to advanced industrial automation.
+
+The Raspberry Pi integrates key computer components on a single board. These include a processor, RAM, GPIO (General Purpose Input/Output) pins, USB ports, HDMI ports, and sometimes onboard Wi-Fi and Bluetooth. It uses ARM-based processors, similar to those found in smartphones, and runs on a microSD card as its primary storage. The Raspberry Pi foundation also offers different models, such as the Raspberry Pi 4 and Raspberry Pi Zero, which vary in performance, size, and connectivity.
+
+<center>
+  <figure>
+    <!-- IMAGE DIMENSIONS: 687px x 515px -->
+    <img src="https://i.postimg.cc/25WFDRpm/616-RFn6-Jv5-L-AC-UF894-1000-QL80.jpg" alt="my alt text"/>
+  </figure>
+</center>
+
+The Raspberry Pi is designed to be a flexible computer. It is able to connect to peripherals like keyboards, mice, and monitors, enabling users to code, browse the internet, or perform other computing tasks. The GPIO pins allow interaction with external hardware, making it ideal for robotics, home automation, and more.
+
+The Raspberry Pi primarily runs on Raspberry Pi OS (formerly called Raspbian), which is a Linux-based operating system optimized for the board. It also supports various other operating systems like Ubuntu, Windows, and other specialized systems for more niche projects.
+
+To use it, the Raspberry Pi requires power via a micro-USB or USB-C cable and a microSD card that contains an operating system. Once powered on, it boots into the OS, providing a platform to write programs or interact with external devices. Its simplicity and extensive community support make it accessible to both beginners and professionals.
+
+With its affordability and adaptability, the Raspberry Pi has become a way for beginners to dive into the world of electronics and professionals to propel themselves into the furniture of technology.
   `;
 
   const research3 = `
@@ -72,7 +89,11 @@ const research = () => {
           <h2 className="font-serif text-4xl pb-8 text-center">
             What is a Raspberry Pi and how does it work?
           </h2>
-          <Markdown className="font-serif prose indent-8 mx-auto">
+          <Markdown
+            className="font-serif prose indent-8 mx-auto"
+            remarkPlugins={[remarkGfm]}
+            rehypePlugins={[rehypeRaw]}
+          >
             {research2}
           </Markdown>
         </TabsContent>
