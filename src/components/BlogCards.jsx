@@ -55,6 +55,15 @@ const BlogCards = () => {
         }
         link={"connector"}
       />
+      <BlogItem
+        img={"https://i.postimg.cc/MKMfG2PM/image.png"}
+        title={"Housing"}
+        date={"November 1, 2024"}
+        content={
+          "This week, I designed and 3D printed the housing for the voice assistant. This will keep all the components together and allow Zacky to become a single product. Creating the enclosure can be split into the following steps:"
+        }
+        link={"housing"}
+      />
     </div>
   );
 };
