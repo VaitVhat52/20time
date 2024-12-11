@@ -64,6 +64,15 @@ const BlogCards = () => {
         }
         link={"housing"}
       />
+      <BlogItem
+        img={"https://i.postimg.cc/Dy4hJ4j2/image.png "}
+        title={"Arduino Programming"}
+        date={"November 12, 2024"}
+        content={
+          "This week, I programmed the Arduino to accomplish 2 tasks: work the OLED screen and run the LED indicator light."
+        }
+        link={"arduino"}
+      />
     </div>
   );
 };
