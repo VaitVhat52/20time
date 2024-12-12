@@ -73,6 +73,15 @@ const BlogCards = () => {
         }
         link={"arduino"}
       />
+      <BlogItem
+        img={"https://i.postimg.cc/505hqwcz/IMG-0601.jpg "}
+        title={"Putting it All Together"}
+        date={"November 16, 2024"}
+        content={
+          "After having completed all the programming and 3D printing, all that’s left to do is put it all together!"
+        }
+        link={"the_end"}
+      />
     </div>
   );
 };
