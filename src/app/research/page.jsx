@@ -90,7 +90,7 @@ Despite its capabilities, ChatGPT still has its limitations. It lacks true under
 
   const worksCited = `
   <center>
-    <a href='https://docs.google.com/document/d/17Wp3Ou0N0dOWaiwkErVvvlHe8fhpP3luOBLna3E77wA/edit?usp=sharing'> Click here to view the works cited page. </a>
+    <a href='https://docs.google.com/document/d/17Wp3Ou0N0dOWaiwkErVvvlHe8fhpP3luOBLna3E77wA/edit?usp=sharing' target="_blank"> Click here to view the works cited page. </a>
   </center>
   `;
   return (
